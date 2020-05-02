@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/style.css">
+
+
+</head>
+
+<body>
+
+    <%- include ('partials/nav.ejs') %>
+
+        <h6 class="mt-5">HELLO :
+            <%= qs.who %>
+        </h6>
+        <h6 class="py-2">YOUR DEPARTMENT :
+            <%= qs.dep %>
+        </h6>
+
+</body>
+
+</html>
