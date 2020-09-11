@@ -21,5 +21,5 @@ app.get('/profile/:id', function(req, res) {
     res.render('index', { person: req.params.id, data: data });
 });
 
-app.listen(3000);
+app.listen(5000);
 console.log("APP STARTED");
