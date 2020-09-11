@@ -1,5 +1,6 @@
 var express = require('express');
 var bodyParser = require('body-parser');
+var port = process.env.PORT || 8080;
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 var app = express();
 app.set('view engine', 'ejs');
@@ -21,5 +22,7 @@ app.get('/profile/:id', function(req, res) {
     res.render('index', { person: req.params.id, data: data });
 });
 
-app.listen(5000);
+app.listen(port, function() {
+	console.log('Our app is running on http://localhost:' + port);
+});
 console.log("APP STARTED");
